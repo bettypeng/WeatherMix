@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/jquery.jplayer.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main text-center">
+            <div id="jplayer"></div>
+    <!--<div class = "locationbox">
+      <div class="form-group">
+        <form id = "locationform">
+          <input type="text" id="locationbar" class = "form-control" placeholder="Where are you?" required>
+          <button onclick = "locationSearch()">Go!</button>
+        </form>
+      </div>-->
+            <h1 id="location"></h1>
+            <div id="image"></div>
+            <h1 id="temp"></h1>
+            <h2 id="feelslike"></h3>
+            <p id = "now"></p>
+
+            <div class="forecast_today">
+                <p id = "today_fore"></p>
+            </div>
+            <div class = "forecast_future">
+                <div class = "row forecast">
+                </div>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <button type="button" class="toggle btn btn-default">F/C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
