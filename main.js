@@ -138,12 +138,6 @@ function soundtrack(music){
               $(this).jPlayer("setMedia", {
                 mp3: music
               }).jPlayer("play");
-              var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
-              var kickoff = function () {
-                    $("#jplayer").jPlayer("play");
-                    document.documentElement.removeEventListener(click, kickoff, true);
-              };
-              document.documentElement.addEventListener(click, kickoff, true);
         },
         swfPath: "/js",
         loop: true
