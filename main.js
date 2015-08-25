@@ -32,11 +32,7 @@ $(document).ready(function() {
       $("#location").text(place['city'] + ", " + place['state']);
       $("#image").append("<img src='" + conditions['icon_url'] + "'/>");
       weather("F", "temp_f", "feelslike_f", "fcttext");
-//      $('#temp').text(conditions['temp_f'] + "°F");
-//      $('#feelslike').text("Feels Like " + conditions['feelslike_f'] + "°F");
       $('#now').text("Current Conditions: " + conditions['weather']);
-        
-//      $('#today_fore').text("Today's Forecast: " + today[0]['fcttext']);
 
       for (i = 0; i < 4; i++) { 
         //Make a dictionary, key is day #, value is array of temps
